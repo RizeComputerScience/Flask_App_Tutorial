@@ -9,4 +9,4 @@ def movie_list():
         {"title": "Inception", "year": 2010},
         {"title": "Everything Everywhere All At Once", "year": 2022},
     ]
-    return "Welcome to the movies page. We want our movies to show here!"
+    return render_template("movies.html", movies=movies)

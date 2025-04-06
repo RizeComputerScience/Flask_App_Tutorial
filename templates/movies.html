@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="/static/styles.css">
     <title>Movie List</title>
 </head>
 <body>
     <h2>Top Movies</h2>
     <ul>
-        <li>YOUR_MOVIES_HERE</li>
+        {% for movie in movies %}
+        <li>{{ movie.title }} ({{ movie.year }})</li>
+        {% endfor %}
     </ul>
     <a href="/">Back to Home</a>
 </body>

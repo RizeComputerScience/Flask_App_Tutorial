@@ -9,7 +9,7 @@ app.register_blueprint(movie_bp)
 # Home route remains in app.py
 @app.route("/")
 def home():
-    return "Welcome to the home page!"
+    return render_template("index.html", name = "Cindy")
 
 if __name__ == "__main__":
     app.run(debug=True)

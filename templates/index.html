@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    {% if name == "Cindy"%}
+    <h1>Welcome, {{ name }}!</h1>
+    <p>This is your specialized homepage.</p>
+    <p>You're the coolest.</p>
+    {% else %}
+    <h1>Hello!</h1>
+    <p>Hmm...you're not Cindy...</p>
+    {% endif %}
+    
+    <a href="/movies">See our favorite movies</a>
+</body>
+</html>
